@@ -1,0 +1,19 @@
+{
+  "name": "lps",
+  "version": "1.0.0",
+  "description": "Website for LPS(placeholder name) org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazyPanda69420/LPS.git"
+  },
+  "author": "Mudassir Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazyPanda69420/LPS/issues"
+  },
+  "homepage": "https://github.com/lazyPanda69420/LPS#readme"
+}
