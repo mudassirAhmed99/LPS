@@ -105,19 +105,25 @@ header {
 header h2 {
 	font-family: "Quicksand", sans-serif;
 	font-size: 50px;
+	font-weight: 700;
 }
 
-header ul li{
+header h4{
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+	padding-bottom: 3px;
+}
+
+header li{
 	display: inline;
 }
 
-header nav {
+header nav ul li{
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-right: -15px;
-}
-
-header nav li {
-	margin: 0 15px;
 }
 
 @media (max-width: 800px) {
@@ -161,7 +167,7 @@ header nav li {
 .hero h3 {
 	font: normal 35px "Open Sans", sans-serif;
 	margin-bottom: 40px;
-	color: #ff2a00;;
+	color: #ff2a00;
 }
 
 .hero a.btn {
@@ -200,5 +206,110 @@ header nav li {
 
 	.hero a.btn {
 		padding: 15px 40px;
+	}
+}
+
+/*Footer Section*/
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #000;
+	color: #fff;
+	padding-top: 20px;
+}
+
+footer ul {
+	display: flex;
+}
+
+footer ul li {
+	margin-left: 16px;
+}
+
+footer ul li a i{
+	margin: 0 5px;
+}
+
+footer ul li a:hover{
+	color: #ff2a00;
+	animation: 0.8s linkHover 0s forwards;
+}
+
+@keyframes linkHover{
+	25%{
+		color: #ffffff;
+	}
+	100%{
+		color: #ffffff;
+	}
+}
+
+footer p {
+	text-transform: uppercase;
+	font-size: 14px;
+	opacity: 0.6;
+	align-self: center;
+}
+
+@media (max-width: 1100px) {
+	footer {
+		flex-direction: column;
+	}
+
+	footer p {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	footer ul li {
+		margin: 0 8px;
+	}
+}
+
+/* CONTACT STYLES */
+.contact{
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(10, 8, 8);
+}
+
+.footer-item-container{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-item li{
+	padding-bottom: 5px;
+	color: #ffffff;
+	list-style-type: none;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid transparent;
+}
+
+.footer-item li:hover{
+	cursor: pointer;
+	animation: 0.8s highlight 0s forwards;
+}
+
+.contact h3{
+	font-family: "Quicksand", sans-serif;
+	font-weight: 500;
+	color: #ffffff;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+@keyframes highlight{
+	30%{
+		border-bottom: 2px solid #ff2a00;
+	}
+	100%{
+		border-bottom: 2px solid #ff2a00;
 	}
 }
