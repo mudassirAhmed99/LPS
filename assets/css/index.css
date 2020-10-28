@@ -135,6 +135,9 @@ header nav ul li{
 	header h2 {
 		margin-bottom: 15px;
 	}
+	header nav{
+		display: none;
+	}
 }
 
 /*Hero Styles*/
